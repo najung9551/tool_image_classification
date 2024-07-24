@@ -1,0 +1,91 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Pretendard', sans-serif;
+  background: url('./main_background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  box-sizing: border-box; /* 추가 */
+}
+
+.content {
+  width: 100%; /* content가 container의 너비를 따르도록 설정 */
+}
+
+.project-title {
+  font-size: 27px; /* 폰트 크기 감소 */
+  font-weight: 900;
+  background: linear-gradient(to right, #08418E, #119DD8, #A6E1F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1em;
+}
+
+.subtitle {
+  font-size: 48px; /* 폰트 크기 감소 */
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0.5em 0;
+}
+
+.subtitle_b {
+  font-size: 48px; /* 폰트 크기 감소 */
+  font-weight: 900;
+  color: #FFFFFF;
+  margin: 0.5em 0;
+}
+
+.spacer {
+  height: 23px; /* 간격 조정을 위한 height 설정 */
+}
+
+.user-guide-title {
+  font-size: 25px; /* 폰트 크기 감소 */
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 1em 0; /* 위쪽 간격 설정 */
+}
+
+.user-guide {
+  font-size: 16px; /* 폰트 크기 감소 */
+  font-weight: 300;
+  color: #FFFFFF;
+  margin-bottom: 2em;
+  line-height: 1.8;
+}
+
+.start-button {
+  background: linear-gradient(to right, #08418E, #119DD8, #A6E1F8);
+  border: none;
+  color: white;
+  padding: 15px 30px; /* 패딩 조정 */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px; /* 폰트 크기 감소 */
+  font-weight: 600;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px; /* 둥근 모서리 설정 */
+  width: 200px; /* 너비 조정 */
+  height: 60px; /* 높이 조정 */
+}
+
+.byline {
+  margin-top: 2em;
+  font-size: 18px; /* 폰트 크기 감소 */
+  font-weight: 300;
+  color: #FFFFFF;
+}

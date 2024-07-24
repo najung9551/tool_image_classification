@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 업로드</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="image_upload.css">
+</head>
+<body>
+    <div class="header">
+        <h1>아래의 업로드 창에 <span class="highlight">공구 이미지를</span> 업로드해주세요.</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <form id="upload-form" method="POST" enctype="multipart/form-data">
+                <div class="upload-box" id="upload-box">
+                    <div class="upload-icon">⬆</div>
+                    <p>이미지 업로드</p>
+                    <label class="file-label">
+                        <span class="file-custom">파일 선택</span>
+                        <input type="file" name="image" id="image" accept="image/*" required>
+                    </label>
+                </div>
+                <div id="preview-container" style="display: none; text-align: center; margin-top: 20px;">
+                    <p>미리보기:</p>
+                    <img id="preview" src="" alt="Image Preview" style="max-width: 100%; height: auto;"/>
+                </div>
+                <p class="tool-list">
+                  * 인식 가능한 공구 목록<br><br>
+                  워터 플라이어, 짧은 드라이버, 정밀 드라이버, 필립스 드라이버, 몽키 스패너, 헥스 렌치, 핵쏘, 그립 플라이어,<br>
+                  기어 풀러, 박스 엔드 스패너, 볼트 커터, 오프셋 렌치, 롱 노즈 플라이어, 스냅링 플라이어, 모터 렌치
+                </p>
+            </form>
+        </div>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <button id="upload-button" class="upload-button">업로드</button>
+    </div>
+
+    <script src="image_upload.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link rel="stylesheet" href="detail_page.css">
+</head>
+<body>
+    <div class="preview-header">Preview</div>
+    <div class="top-right">
+        <button class="list-button" onclick="window.location.href='../list/list.html'">List</button>
+    </div>
+    <div class="preview-box">
+        <div class="container">
+            <div class="product-image">
+                <img id="product-image" src="" alt="제품 이미지">
+            </div>
+                <div class="small-box">
+                    <div class="product-info">
+                        <h1 class="product-name">[<span style="color: #119DD8">제품명</span>]</h1>
+                        <div class="product-category-code">
+                            <p class="category">상품 카테고리: 카테고리 / 제품명</p>
+                            <p class="product-code">제품코드: 코드</p>
+                        </div>
+                        <hr><br>
+                        <p class="price">판매가격: 가격</p><br>
+                        <p class="origin">원산지: 원산지</p><br>
+                        <hr>
+                    <p>배송 정보:</p>
+                    <p>50,000원 이상 구매 시 무료 배송</p>
+                    <p>50,000원 미만 구매 시 배송료 3,000원</p>
+                    <div class="quantity-box">
+                        <label for="quantity">구매 수량:</label>
+                        <button id="decrement">-</button>
+                        <input type="text" id="quantity" value="1" readonly>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="button-container">
+            <button class="home-button" onclick="window.location.href='../main/main.html'">Home</button>
+            <button class="save-button">Save</button>
+        </div>
+    </div>
+    <script src="detail_page.js"></script>
+</body>
+</html>
