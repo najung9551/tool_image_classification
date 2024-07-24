@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 분류 결과</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="classification.css">
+</head>
+<body>
+    <div class="header">
+        <h1>이미지 분류 결과를 확인하고 <span class="highlight">다음 단계를</span> 선택해주세요.</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="image-preview">
+                <img id="classified-image" src="" alt="분류된 이미지">
+            </div>
+            <div class="result">
+                <p>등록하신 이미지는:</p>
+                <h2 id="prediction-result">""</h2>
+                <p>로 예측됩니다.</p>
+                <br><br>
+                <p2>예측 결과가 틀렸다면 'Retry' 버튼을, 예측 결과가 맞다면 'Next' 버튼을 눌러주세요.</p2>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="retry-button" onclick="location.href='../image_upload/image_upload.html'">Retry</button>
+            <button class="next-button" id="next-button">Next</button>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const result = urlParams.get('result');
+            document.getElementById('prediction-result').textContent = `"${result}"`;
+            
+            const imageData = localStorage.getItem('uploadedImage');
+            if (imageData) {
+                document.getElementById('classified-image').src = imageData;
+                // 이미지를 로컬 스토리지에 저장하여 detail_page에서 사용할 수 있도록 합니다.
+                localStorage.setItem('productImage', imageData);
+                localStorage.removeItem('uploadedImage'); // 이미지 데이터는 일회성 사용 후 제거
+            }
+
+            document.getElementById('next-button').addEventListener('click', function() {
+                window.location.href = `../detail_page/detail_page.html?result=${encodeURIComponent(result)}`;
+            });
+        }
+    </script>
+</body>
+</html>
+
+

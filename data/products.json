@@ -1,0 +1,107 @@
+{
+  "water_plier": {
+    "name": "워터 플라이어",
+    "price": "15,000원",
+    "category": "플라이어",
+    "product_code": "WP001",
+    "origin": "독일"
+  },
+  "stubby_screwdriver": {
+    "name": "짧은 드라이버",
+    "price": "8,000원",
+    "category": "드라이버",
+    "product_code": "SD002",
+    "origin": "일본"
+  },
+  "precision_screwdriver": {
+    "name": "정밀 드라이버",
+    "price": "12,000원",
+    "category": "드라이버",
+    "product_code": "PS003",
+    "origin": "한국"
+  },
+  "Phillips_screwdriver": {
+    "name": "필립스 드라이버",
+    "price": "10,000원",
+    "category": "드라이버",
+    "product_code": "PD004",
+    "origin": "미국"
+  },
+  "monkey_spanner": {
+    "name": "몽키 스패너",
+    "price": "20,000원",
+    "category": "스패너",
+    "product_code": "MS005",
+    "origin": "일본"
+  },
+  "hex_wrench": {
+    "name": "헥스 렌치",
+    "price": "5,000원",
+    "category": "렌치",
+    "product_code": "HW006",
+    "origin": "독일"
+  },
+  "hacksaw": {
+    "name": "핵쏘",
+    "price": "18,000원",
+    "category": "절단도구",
+    "product_code": "HS007",
+    "origin": "미국"
+  },
+  "grip_plier": {
+    "name": "그립 플라이어",
+    "price": "14,000원",
+    "category": "플라이어",
+    "product_code": "GP008",
+    "origin": "한국"
+  },
+  "gear_puller": {
+    "name": "기어 풀러",
+    "price": "25,000원",
+    "category": "공구",
+    "product_code": "GP009",
+    "origin": "독일"
+  },
+  "box_end spanner": {
+    "name": "박스 엔드 스패너",
+    "price": "12,000원",
+    "category": "스패너",
+    "product_code": "BES010",
+    "origin": "한국"
+  },
+  "bolt_cutter": {
+    "name": "볼트 커터",
+    "price": "30,000원",
+    "category": "절단도구",
+    "product_code": "BC011",
+    "origin": "미국"
+  },
+  "offset_wrench": {
+    "name": "오프셋 렌치",
+    "price": "17,000원",
+    "category": "렌치",
+    "product_code": "OW012",
+    "origin": "일본"
+  },
+  "long_nose": {
+    "name": "롱 노즈 플라이어",
+    "price": "10,000원",
+    "category": "플라이어",
+    "product_code": "LN013",
+    "origin": "독일"
+  },
+  "snapring_plier": {
+    "name": "스냅링 플라이어",
+    "price": "22,000원",
+    "category": "플라이어",
+    "product_code": "SP014",
+    "origin": "한국"
+  },
+  "motor_wrench": {
+    "name": "모터 렌치",
+    "price": "28,000원",
+    "category": "렌치",
+    "product_code": "MW015",
+    "origin": "미국"
+  }
+}
